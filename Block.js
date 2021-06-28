@@ -15,6 +15,7 @@ class Block{
       var pos= this.body.position;
       if(this.body.speed<3){
         imageMode(CENTER);
+        image(this.image,pos.x,pos.y,this.width, this.height);
        }
        else{
          World.remove(world,this.body);
